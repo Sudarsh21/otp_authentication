@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
 import "../assets/css/dashboard.css";
 
 import home from "../assets/img/Vector.svg";
@@ -12,7 +11,6 @@ import "chart.js/auto";
 
 const Dashboard = () => {
     const [activeSection, setActiveSection] = useState("home");
-    const navigate = useNavigate();
 
     const lineData = {
         labels: ["12th Oct", "13th Oct", "14th Oct", "15th Oct", "16th Oct", "17th Oct"],
